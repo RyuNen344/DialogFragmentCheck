@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.ryunen344.android.df.check.main.MainFragment">
+
+        <action
+            android:id="@+id/to_both_dialog_fragment"
+            app:destination="@id/both_dialog_fragment" />
+
+        <action
+            android:id="@+id/to_create_dialog_dialog_fragment"
+            app:destination="@id/create_dialog_dialog_fragment" />
+
+        <action
+            android:id="@+id/to_create_view_dialog_fragment"
+            app:destination="@id/create_view_dialog_fragment" />
+
+        <action
+            android:id="@+id/to_view_binding_dialog_fragment"
+            app:destination="@id/view_binding_dialog_fragment" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/both_dialog_fragment"
+        android:name="com.ryunen344.android.df.check.main.both.BothDialogFragment" />
+
+    <dialog
+        android:id="@+id/create_dialog_dialog_fragment"
+        android:name="com.ryunen344.android.df.check.main.createdialog.CreateDialogDialogFragment" />
+
+    <dialog
+        android:id="@+id/create_view_dialog_fragment"
+        android:name="com.ryunen344.android.df.check.main.createview.CreateViewDialogFragment" />
+
+    <dialog
+        android:id="@+id/view_binding_dialog_fragment"
+        android:name="com.ryunen344.android.df.check.main.viewbinding.ViewBindingDialogFragment" />
+
+</navigation>
